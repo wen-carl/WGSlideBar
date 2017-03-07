@@ -86,12 +86,16 @@
 
 - (void)setBarBackgroundColor:(UIColor *)color
 {
-    _bar.backgroundColor = color;
+    if (color) {
+        _bar.backgroundColor = color;
+    }
 }
 
 - (void)setShownViewBackGroundColor:(UIColor *)color
 {
-    _shown.backgroundColor = color;
+    if (color) {
+        _shown.backgroundColor = color;
+    }
 }
 
 - (NSRange)getItemIndex
